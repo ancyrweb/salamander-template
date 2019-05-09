@@ -1,0 +1,23 @@
+{
+  "name": "app-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production ts-node src/index.ts",
+    "dev": "ts-node src/dev.ts",
+    "typeorm": "ts-node -r ts-node/register ./node_modules/.bin/typeorm",
+    "pretty": "prettier --write \"{src}/**/*.{ts,tsx}\""
+  },
+  "dependencies": {
+    "@phc/argon2": "^1.0.9",
+    "graphql-iso-date": "^3.6.1",
+    "salamander": "0.1.0",
+    "upash": "^1.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
